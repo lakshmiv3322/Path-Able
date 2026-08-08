@@ -39,6 +39,26 @@ PathAble is a community-verified, AI-assisted navigation web application designe
 | **State & Notifications** | Centralized Store, Sonner Toast Notifications |
 | **Deployment** | Vercel (Static Client-Side SPA) |
 
+## System Architecture & Workflow
+[ User Input / Client Browser ]
+│
+▼
+┌────────────────────────────────────────────────────────┐
+│               Vite / React Frontend (TSX)              │
+│                                                        │
+│  ├── Navigation Views (MapPage, Dashboard)              │
+│  ├── State Store (@/store/appStore)                     │
+│  └── Accessibility Engine (Audio, Speech, i18n)         │
+└────────────────────────────────────────────────────────┘
+│
+▼
+┌────────────────────────────────────────────────────────┐
+│                Local State & Data Engine               │
+│                                                        │
+│  ├── Seeded Venue & Barrier Pipeline (@/data/mockData) │
+│  └── Live Route Recalculator Logic                      │
+└────────────────────────────────────────────────────────┘
+
 
 ## Local Development Setup
 ### Prerequisites
@@ -55,6 +75,3 @@ PathAble is a community-verified, AI-assisted navigation web application designe
 ``
    ### Deployment : Vercel
    Access the website here : https://path-able-e9y0d1wz7-lakshmis-projects-bd6c9528.vercel.app/
-
-
-## System Architecture & Workflow
