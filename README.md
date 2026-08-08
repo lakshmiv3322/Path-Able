@@ -27,7 +27,6 @@ PathAble is a community-verified, AI-assisted navigation web application designe
 * **Civic Insights & Municipal Reporting:** Interactive dashboard tracking district-level step-free coverage trends with a single-tap Municipal Report Export tool for local authorities.
 
 
-
 ## Tech Stack
 
 | Category | Technology |
@@ -38,27 +37,6 @@ PathAble is a community-verified, AI-assisted navigation web application designe
 | **Assistive APIs** | Web Speech API, Speech Synthesis API, Web Audio API |
 | **State & Notifications** | Centralized Store, Sonner Toast Notifications |
 | **Deployment** | Vercel (Static Client-Side SPA) |
-
-## System Architecture & Workflow
-[ User Input / Client Browser ]
-│
-▼
-┌────────────────────────────────────────────────────────┐
-│               Vite / React Frontend (TSX)              │
-│                                                        │
-│  ├── Navigation Views (MapPage, Dashboard)              │
-│  ├── State Store (@/store/appStore)                     │
-│  └── Accessibility Engine (Audio, Speech, i18n)         │
-└────────────────────────────────────────────────────────┘
-│
-▼
-┌────────────────────────────────────────────────────────┐
-│                Local State & Data Engine               │
-│                                                        │
-│  ├── Seeded Venue & Barrier Pipeline (@/data/mockData) │
-│  └── Live Route Recalculator Logic                      │
-└────────────────────────────────────────────────────────┘
-
 
 ## Local Development Setup
 ### Prerequisites
